@@ -1,21 +1,20 @@
 ######## Ignore list for arduino projects ########
 
-*.tmp
-*.psd
-*.bak
-*.sfk
-*.zip
-*.sch
-*.lnk
-dialer code- Lucidchart
-/Sound Files/Amazon Polly/*.*
-/Sound Files/Recordings/*.*
-/Sound Files/digits/Original/*.*
-/Sound Files/digits/Rendered/*.*
-git.txt
+#*.tmp
+#*.psd
+#*.bak
+#*.sfk
+#*.zip
+#*.sch
+#*.lnk
+#dialer code- Lucidchart
+#/Sound Files/Amazon Polly/*.*
+#/Sound Files/Recordings/*.*
+#/Sound Files/digits/Original/*.*
+#/Sound Files/digits/Rendered/*.*
+#git.txt
+#~$*.xlsx
 
-
-~$*.xlsx
 
 ######## Ignore list for Eagle, a PCB layout tool ##########
 
