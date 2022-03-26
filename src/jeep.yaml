@@ -1,0 +1,59 @@
+# This is the node inside the Jeep to provide presence.
+substitutions:
+  device_name: jeep
+  
+esphome:
+  name: ${device_name}
+
+esp8266:
+  board: esp01_1m
+
+api:
+
+ota:
+  safe_mode: True
+  
+packages:
+  wifi: !include common/wifi.yaml
+
+logger:
+  level: VERBOSE     # default is DEBUG
+
+######################################
+# Blink an LED if there's a problem, solid on otherwise.    
+# The built-in LED is D4 (GPIO2) on the Wemos D1 Mini
+status_led:
+  pin:
+    number: 2
+    #inverted: True
+
+
+binary_sensor:
+  - platform: status
+    name: "Jeep Status"    
+
+#################################################
+# Get the WiFi details
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: ${device_name} IP Address
+      id: SteveLight_ip
+    ssid:
+      name: ${device_name} SSID
+    mac_address:
+      name: ${device_name} Mac Address
+      
+sensor:
+  - platform: wifi_signal
+    name: ${device_name} WiFi Signal Sensor"
+    id: SteveLight_WiFi_level
+    update_interval: 60s
+    
+    
+#################################################
+#Deep Sleep
+deep_sleep:
+  id: deep_sleep_handler
+  run_duration: 10s
+  sleep_duration: 60s
