@@ -16,5 +16,4 @@ The sequence is:
 4. Turn off the OTA mode.
 5. Press "Restart" on the dashboard to reboot the ESP.
 
-![Home Assistant Dashboard]([https://assets.digitalocean.com/articles/alligator/boo.svg](https://github.com/SteveRMann/esp8266-beacon/blob/main/images/jeep.jpg) "Home Assistnat Dashboard")
-
+![Home Assistant Dashboard]([images/jeep.jpg) "Home Assistnat Dashboard")
