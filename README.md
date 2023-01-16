@@ -15,3 +15,5 @@ The sequence is:
 3. Perform my OTA upload.
 4. Turn off the OTA mode.
 5. Press "Restart" on the dashboard to reboot the ESP.
+
+https://github.com/SteveRMann/esp8266-beacon/blob/main/images/jeep.jpg
